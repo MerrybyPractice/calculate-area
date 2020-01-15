@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CalculateArea.SquareTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-15T21:22:20" hostname="Merrys-MBP.localdomain" time="0.02">
+  <properties/>
+  <testcase name="areaOfSquareWithSidesZeroTest()" classname="CalculateArea.SquareTest" time="0.018"/>
+  <testcase name="areaOfSquareWithSidesOneTest()" classname="CalculateArea.SquareTest" time="0.002"/>
+  <system-out><![CDATA[0
+1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

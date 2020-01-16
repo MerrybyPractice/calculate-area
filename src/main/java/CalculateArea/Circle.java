@@ -18,6 +18,7 @@ public class Circle implements Shape {
 
     private float radius;
     private float area;
+    private String type = "Circle";
 
     /**
      * Circle Class Constructor
@@ -75,7 +76,18 @@ public class Circle implements Shape {
      * @return: float area
      * area set in the findAreaOf method
      */
-    public float getArea() {
+    @Override
+    public Float getArea() {
         return area;
+    }
+
+    /**
+     * Circle.getType()
+     * @return String type
+     * type stored in each instance of Circle as 'circle'
+     */
+    @Override
+    public String getType() {
+        return type;
     }
 }

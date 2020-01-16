@@ -1,5 +1,8 @@
 package CalculateArea;
 
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
@@ -18,6 +21,7 @@ public class Triangle implements Shape {
 
     private float side;
     private float area;
+    private String type = "Triangle";
 
     /**
      * Triangle Class Constructor
@@ -70,7 +74,7 @@ public class Triangle implements Shape {
      *
      * Written explicitly for readability.
      */
-    private Double heronsFormula(float side){
+    protected Double heronsFormula(float side){
 
         float semi = (this.side *3)/2;
         float paren = semi - side;
@@ -94,8 +98,19 @@ public class Triangle implements Shape {
      * @return: float area
      * area set in the findAreaOf method
      */
-    public float getArea() {
+    public Float getArea() {
         return area;
     }
 
+    /**
+     * Triangle.getType()
+     * @return String type
+     * type stored in each instance of Triangle as 'triangle'
+     */
+    @Override
+    public String getType() {
+        return type;
+    }
+
 }
+

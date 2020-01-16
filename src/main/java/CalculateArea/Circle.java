@@ -40,7 +40,6 @@ public class Circle implements Shape {
             Float roundedArea = this.formattedRoundArea(area);
             this.area = roundedArea;
             return roundedArea.toString();
-
     }
 
     /**

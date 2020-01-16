@@ -1,5 +1,11 @@
 package CalculateArea;
 
+/**
+ * public class CalcRunnable implements Runnable
+ *
+ *
+ * Convenience class for 
+ */
 public class CalcRunnable implements Runnable {
 
     private Shape shape;

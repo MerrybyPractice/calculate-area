@@ -17,6 +17,7 @@ public class Triangle implements Shape {
         Double area = heuronsFormula(this.side);
         try {
             Float formattedRoundArea = formattedRoundArea(area);
+            this.area = formattedRoundArea;
             return formattedRoundArea.toString();
         } catch (ParseException e) {
             e.printStackTrace();
@@ -48,4 +49,5 @@ public class Triangle implements Shape {
     public float getArea() {
         return area;
     }
+
 }

@@ -19,7 +19,3 @@
 In formattedRoundArea 1.0
 Line 20 findAreaOf 1.0
 +Line 21 findAreaOf, floatValue of area 1.0
-0Before setting rounded area to object area 3.14
-/After setting rounded area to object area 3.14
-/Before setting rounded area to object area 0.0
-.After setting rounded area to object area 0.0

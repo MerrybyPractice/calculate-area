@@ -1,9 +1,7 @@
 package CalculateArea;
 
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.text.ParseException;
 
 import static java.math.BigDecimal.valueOf;
@@ -23,9 +21,7 @@ public class Circle implements Shape {
         try {
             Double area = (Math.PI * Math.pow(this.radius, 2));
             Float roundedArea = this.formattedRoundArea(area);
-            System.out.println("Before setting rounded area to object area " + roundedArea);
             this.area = roundedArea;
-            System.out.println("After setting rounded area to object area " + roundedArea);
             return roundedArea.toString();
 
         } catch (ParseException e) {
@@ -48,5 +44,9 @@ public class Circle implements Shape {
 
     public float getRadius() {
         return radius;
+    }
+
+    public float getArea() {
+        return area;
     }
 }

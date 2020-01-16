@@ -5,7 +5,7 @@ import java.text.ParseException;
 
 public interface Shape {
 
-   public float findAreaOf();
+   public String findAreaOf();
    public Number formattedRoundArea(Double area) throws ParseException;
 
 }

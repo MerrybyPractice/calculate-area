@@ -6,22 +6,38 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Shape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Square.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Triangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CircleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ShapeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SquareTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TriangleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/CalculateArea/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CalculateArea/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CalculateArea/CircleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CalculateArea/SquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CalculateArea/SquareTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CalculateArea.CircleTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CalculateArea.CircleTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CalculateArea.SquareTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CalculateArea.SquareTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/CalculateArea.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/CalculateArea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CalculateArea.CircleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CalculateArea.CircleTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CalculateArea.SquareTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CalculateArea.SquareTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalculateArea/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculateArea/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalculateArea/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculateArea/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalculateArea/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculateArea/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalculateArea/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculateArea/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalculateArea/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculateArea/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculateArea/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculateArea/CircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculateArea/SquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculateArea/SquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculateArea/TriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculateArea/TriangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,8 +160,29 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="TriangleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;CalculateArea.TriangleTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TriangleTest" />
         <item itemvalue="Gradle.CircleTest.areaOfCircleWithRadiusOneTest" />
       </list>
     </recent_temporary>
@@ -188,42 +225,42 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="49" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1579116581013" />
-    <state x="397" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1579122929428">
+    <state x="397" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1579134706933">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="397" y="239" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1097@0.23.1792.1097" timestamp="1579122929428" />
-    <state width="1047" height="271" key="GridCell.Tab.0.bottom" timestamp="1579123339719">
+    <state x="397" y="239" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1097@0.23.1792.1097" timestamp="1579134706933" />
+    <state width="1140" height="271" key="GridCell.Tab.0.bottom" timestamp="1579135917858">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1047" height="271" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1579123339719" />
-    <state width="1047" height="271" key="GridCell.Tab.0.center" timestamp="1579123339718">
+    <state width="1140" height="271" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1579135917858" />
+    <state width="1140" height="271" key="GridCell.Tab.0.center" timestamp="1579135917857">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1047" height="271" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1579123339718" />
-    <state width="1047" height="271" key="GridCell.Tab.0.left" timestamp="1579123339717">
+    <state width="1140" height="271" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1579135917857" />
+    <state width="1140" height="271" key="GridCell.Tab.0.left" timestamp="1579135917857">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1047" height="271" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1579123339717" />
-    <state width="1047" height="271" key="GridCell.Tab.0.right" timestamp="1579123339719">
+    <state width="1140" height="271" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1579135917857" />
+    <state width="1140" height="271" key="GridCell.Tab.0.right" timestamp="1579135917857">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1047" height="271" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1579123339719" />
-    <state width="1047" height="334" key="GridCell.Tab.1.bottom" timestamp="1579122828987">
+    <state width="1140" height="271" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1579135917857" />
+    <state width="1047" height="334" key="GridCell.Tab.1.bottom" timestamp="1579126144058">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1047" height="334" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1579122828987" />
-    <state width="1047" height="334" key="GridCell.Tab.1.center" timestamp="1579122828986">
+    <state width="1047" height="334" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1579126144058" />
+    <state width="1047" height="334" key="GridCell.Tab.1.center" timestamp="1579126144058">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1047" height="334" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1579122828986" />
-    <state width="1047" height="334" key="GridCell.Tab.1.left" timestamp="1579122828986">
+    <state width="1047" height="334" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1579126144058" />
+    <state width="1047" height="334" key="GridCell.Tab.1.left" timestamp="1579126144058">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1047" height="334" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1579122828986" />
-    <state width="1047" height="334" key="GridCell.Tab.1.right" timestamp="1579122828986">
+    <state width="1047" height="334" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1579126144058" />
+    <state width="1047" height="334" key="GridCell.Tab.1.right" timestamp="1579126144058">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1047" height="334" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1579122828986" />
+    <state width="1047" height="334" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1579126144058" />
     <state x="397" y="210" key="SettingsEditor" timestamp="1579116080535">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -232,10 +269,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="368" y="308" key="chooseDestDirectoryDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1579114906315" />
-    <state x="573" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1579116683221">
+    <state x="573" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1579126159319">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="573" y="403" key="com.intellij.ide.util.TipDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1579116683221" />
+    <state x="573" y="403" key="com.intellij.ide.util.TipDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1579126159319" />
     <state x="445" y="257" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579115013479">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>

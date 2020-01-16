@@ -1,6 +1,5 @@
 package CalculateArea;
 
-import java.text.DecimalFormat;
 import java.text.ParseException;
 
 public class Square implements Shape{
@@ -11,27 +10,27 @@ public class Square implements Shape{
     public Square(float side){this.side = side;};
 
     @Override
-    public float findAreaOf() {
-
+    public String findAreaOf() {
+        System.out.println("Line 15 findAreaOf " + this.side);
         try {
             Double area = Math.pow(this.side, 2);
+            System.out.println("Line 18 findAreaOf " + area);
             Number numberRoundedArea = this.formattedRoundArea(area);
-            return numberRoundedArea.floatValue();
+            System.out.println("Line 20 findAreaOf " + numberRoundedArea);
+            System.out.println("Line 21 findAreaOf, floatValue of area " + numberRoundedArea.floatValue());
+            return numberRoundedArea.toString();
 
         } catch (ParseException e) {
             e.printStackTrace();
-            return -1;
+            return null;
         }
     }
 
     @Override
     public Number formattedRoundArea(Double area) throws ParseException {
 
-        DecimalFormat df = new DecimalFormat("###.##");
-
-        String stringyRoundedArea = df.format(area);
-        System.out.println(stringyRoundedArea);
-        return df.parse(stringyRoundedArea);
+        System.out.println("In formattedRoundArea " + Math.round(area*100)/100.f);
+        return Math.round(area*100)/100.f;
     }
 
     public float getSide() {

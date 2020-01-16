@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CalculateArea.SquareTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-16T06:53:02" hostname="Merrys-MacBook-Pro.local" time="0.017">
+<testsuite name="CalculateArea.SquareTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-01-16T07:04:03" hostname="Merrys-MacBook-Pro.local" time="0.017">
   <properties/>
-  <testcase name="areaOfSquareWithSidesTwoPointThree()" classname="CalculateArea.SquareTest" time="0.012"/>
-  <testcase name="areaOfSquareWithSidesZeroTest()" classname="CalculateArea.SquareTest" time="0.001"/>
-  <testcase name="squareStoresSideCorrectly()" classname="CalculateArea.SquareTest" time="0.001"/>
+  <testcase name="areaOfSquareWithSidesTwoPointThree()" classname="CalculateArea.SquareTest" time="0.013"/>
+  <testcase name="areaOfSquareWithSidesZeroTest()" classname="CalculateArea.SquareTest" time="0.0"/>
+  <testcase name="squareStoresSideCorrectly()" classname="CalculateArea.SquareTest" time="0.0"/>
   <testcase name="typeOfSquareisSquare()" classname="CalculateArea.SquareTest" time="0.0"/>
-  <testcase name="areaOfSquareWithSidesOneTest()" classname="CalculateArea.SquareTest" time="0.001"/>
+  <testcase name="areaOfSquareWithSidesOneTest()" classname="CalculateArea.SquareTest" time="0.0"/>
   <system-out><![CDATA[In areaOfSquareWithSidesTwoPointThree 5.29
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

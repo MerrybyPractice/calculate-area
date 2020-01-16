@@ -1,6 +1,8 @@
 package CalculateArea;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 
 /**
@@ -18,60 +20,36 @@ import java.util.HashMap;
  */
 public class CalcManager{
 
-    private Square square;
-    private Circle circle;
-    private Triangle triangle;
-    private CalcRunnable squareRunnable;
-    private CalcRunnable circleRunnable;
-    private CalcRunnable triangleRunnable;
+    private int input;
+    private HashMap<Shape, Runnable> runnableHashMap = new HashMap<Shape, Runnable>();
+    private List<Thread> threadList = new ArrayList<Thread>();
 
     /**
      * public HashMap<String, Float> calculateArea(int input)
      *
-     * @param input: int input passed in to calculateArea is then utilized to create every Shape(Square, Circle,
-     *             Triangle) instance associated with that instance of CalcManager.
+     * @param inputFromUser: double input provided by the end user and passed in to calculateArea is then utilized to
+     *                     create every Shape(Square, Circle, Triangle) instance associated with that instance of CalcManager.
+     *
      * @return a HashMap<String, Float> containing String shape Keys associated with their calculated Float area Values.
      *
      * Calls the private method CalcManager.setUp.
      */
-    public HashMap<String, Float> calculateArea(int input){
+    public HashMap<String, Float> calculateArea(Double inputFromUser) throws CannotComputeAreaWithNegativeException {
 
-        this.setUp(input);
+        if (inputFromUser < 0){
+            throw new CannotComputeAreaWithNegativeException("Inputs must be above 0. Please try again with a positive number.");
+        } else {
 
-        Thread squareThread = new Thread(squareRunnable);
-        Thread circleThread = new Thread(circleRunnable);
-        Thread triangleThread = new Thread(triangleRunnable);
+            int input = inputFromUser.intValue();
 
-        squareThread.start();
-        circleThread.start();
-        triangleThread.start();
+            this.input = input;
 
-        HashMap<String, Float> areaHashMap = new HashMap<String, Float>();
+            this.setUp(input);
 
-        try {
-            squareThread.join();
-            areaHashMap.put("square", square.getArea());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            startThreads();
+            HashMap<String, Float> areaHashMap = joinThreads();
+            return areaHashMap;
         }
-
-        try {
-            circleThread.join();
-            areaHashMap.put("circle", circle.getArea());
-
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        try {
-            triangleThread.join();
-            areaHashMap.put("triangle", triangle.getArea());
-
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        return areaHashMap;
     }
 
     /**
@@ -85,16 +63,65 @@ public class CalcManager{
      *
      * @param input int, passed down from calculateArea. Passed into each Shape instantiation.
      */
-    private void setUp(int input){
+    protected void setUp(int input){
 
-        square = new Square(input);
-        squareRunnable = new CalcRunnable(square, "Square Thread");
+        Square square = new Square(input);
+        CalcRunnable squareRunnable = new CalcRunnable(square, "Square Thread");
+        runnableHashMap.put(square, squareRunnable);
 
-        circle = new Circle(input);
-        circleRunnable = new CalcRunnable(circle, "Circle Thread");
+        Circle circle = new Circle(input);
+        CalcRunnable circleRunnable = new CalcRunnable(circle, "Circle Thread");
+        runnableHashMap.put(circle, circleRunnable);
 
-        triangle = new Triangle(input);
-        triangleRunnable = new CalcRunnable(triangle, "Triangle Thread");
+        Triangle triangle = new Triangle(input);
+        CalcRunnable triangleRunnable = new CalcRunnable(triangle, "Triangle Thread");
+        runnableHashMap.put(triangle, triangleRunnable);
+    }
+
+    /**
+     * private void startThreads()
+     *
+     * Gathers all activities related to starting threads into one function call.
+     * Accesses the runnableHashMap created in setUp and instantiates a number of threads for each <Shape, Runnable> pair.
+     */
+    private void startThreads(){
+
+        for (Shape key : runnableHashMap.keySet()){
+
+            Runnable threadRunnable = runnableHashMap.get(key);
+
+            threadList.add(new Thread(threadRunnable, key.toString()));
+        }
+
+        for(Thread thread : threadList){
+
+            thread.start();
+        }
+    }
+
+    /**
+     * private HashMap <String, Float> joinThreads()
+     * @return areaHashMap
+     * Throws InterruptionException.
+     *
+     * Waits for each thread to die via a .join() method and then accesses each Shape instance and adds its String Type
+     * and Float Area to the areaHashMap.
+     */
+    private HashMap<String, Float> joinThreads() {
+        HashMap<String, Float> areaHashMap = new HashMap<String, Float>();
+        for (Thread thread : threadList) {
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                System.out.println("Your " + thread.getName() + " thread has been interrupted");
+                e.printStackTrace();
+            }
+        }
+
+        for (Shape shape : runnableHashMap.keySet()) {
+            areaHashMap.put(shape.getType(), shape.getArea());
+        }
+        return areaHashMap;
     }
 
     /**
@@ -109,10 +136,60 @@ public class CalcManager{
      */
     public String prettyPrint(HashMap<String, Float> areaHashMap){
         StringBuilder prettyBuilder = new StringBuilder(300);
-        prettyBuilder.append("Given Input of " + square.getSide() + " units: \n");
+        prettyBuilder.append("\n Given Input of ").append(input).append(" units: \n");
         prettyBuilder.append("\n");
-        areaHashMap.forEach((k,v) -> prettyBuilder.append("A " + k + " has an area of " + v + ".\n"));
+        areaHashMap.forEach((k,v) -> prettyBuilder.append("A ").append(k).append(" has an area of ").append(v).append(".\n"));
         return prettyBuilder.toString();
     }
 
+    //Getters and Setters
+
+    /**
+     * public int getInput()
+     * @return String input
+     *
+     * Exposes private String input
+     * Input is set inside of calculateArea
+     */
+    public int getInput() {
+        return input;
+    }
+
+    /**
+     * public HashMap<Shape, Runnable> getRunnableHashMap()
+     * @return HashMap<Shape, Runnable> runnableHashMap
+     *
+     * Exposes private HashMap runnableHashMap
+     * runnableHashMap is set in joinThreads
+     */
+    public HashMap<Shape, Runnable> getRunnableHashMap() {
+        return runnableHashMap;
+    }
+
+    /**
+     * public List<Thread> getThreadList
+     * @return List<Thread> threadList
+     *
+     * Exposes private List threadList
+     * threadList is set in startThreads
+     */
+    public List<Thread> getThreadList() {
+        return threadList;
+    }
+
+    /**
+     * public class CannotComputeAreaWithNegativeException extends Exception
+     *
+     * Exception class creating a custom exception for use when a negative number is passed in.
+     */
+    public class CannotComputeAreaWithNegativeException extends Exception {
+        /**
+         * @param errorMessage: String errorMessage is passed in at instantiation so each instance provides a unique
+         *                    and useful message given its location.
+         *
+         */
+        public CannotComputeAreaWithNegativeException(String errorMessage) {
+            super(errorMessage);
+        }
+    }
 }

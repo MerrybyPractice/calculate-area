@@ -18,6 +18,7 @@ public class Square implements Shape{
 
     private float side;
     private float area;
+    private String type = "Square";
 
     /**
      * Square Class Constructor
@@ -71,7 +72,18 @@ public class Square implements Shape{
      * @return: float area
      * area set in the findAreaOf method
      */
-    public float getArea() {
+    @Override
+    public Float getArea() {
         return area;
+    }
+
+    /**
+     * Triangle.getType()
+     * @return String type
+     * type stored in each instance of Triangle as 'triangle'
+     */
+    @Override
+    public String getType() {
+        return type;
     }
 }

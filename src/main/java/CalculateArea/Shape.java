@@ -10,5 +10,7 @@ public interface Shape {
 
    public String findAreaOf();
    public Float formattedRoundArea(Double area);
+   public Float getArea();
+   public String getType();
 
 }

@@ -1,5 +1,7 @@
 package CalculateArea;
 
+import javafx.concurrent.Task;
+
 /**
  * public class CalcRunnable implements Runnable
  *
@@ -33,6 +35,36 @@ public class CalcRunnable implements Runnable {
      */
     @Override
     public void run() {
+
+        try {
             this.shape.findAreaOf();
+            Thread.sleep(1000);
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+// Getters and Setters
+
+    /**
+     * public Shape getShape
+     * @return Shape shape
+     *
+     * Exposes private Shape shape
+     * shape is set when CalcRunnable instance is instantiated
+     */
+    public Shape getShape() {
+        return shape;
+    }
+
+    /**
+     * public String threadName
+     * @return String threadName
+     *
+     * Exposes private String threadName
+     * threadName is set when CalcRunnable instance is instantiated
+     */
+    public String getThreadName() {
+        return threadName;
     }
 }

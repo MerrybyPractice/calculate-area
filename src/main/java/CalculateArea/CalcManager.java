@@ -1,7 +1,7 @@
 package CalculateArea;
 
-import javax.annotation.processing.SupportedSourceVersion;
 import java.util.HashMap;
+
 
 public class CalcManager{
 
@@ -28,17 +28,14 @@ public class CalcManager{
 
         try {
             squareThread.join();
-            areaHashMap.put("Area of a Square with sides of size " + square.getSide(), square.getArea());
-            System.out.println("Square Thread Dead " + square.getArea());
-
+            areaHashMap.put("square", square.getArea());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
         try {
             circleThread.join();
-            areaHashMap.put("Area of a Circle with radius of size " + circle.getRadius(), circle.getArea());
-            System.out.println("Circle Thread Dead " + circle.getArea());
+            areaHashMap.put("circle", circle.getArea());
 
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -46,8 +43,8 @@ public class CalcManager{
 
         try {
             triangleThread.join();
-            areaHashMap.put("Area of an Equalaterial Triangle with sides of size " + triangle.getSide(), triangle.getArea());
-            System.out.println("Triangle Thread Dead " + triangle.getArea());
+            areaHashMap.put("triangle", triangle.getArea());
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -78,6 +75,12 @@ public class CalcManager{
         triangleRunnable = new CalcRunnable(triangle, "Triangle Thread");
     }
 
-    public String prettyPrint()
+    public String prettyPrint(HashMap<String, Float> areaHashMap){
+        StringBuilder prettyBuilder = new StringBuilder(300);
+        prettyBuilder.append("Given Input of " + square.getSide() + " units: \n");
+        prettyBuilder.append("\n");
+        areaHashMap.forEach((k,v) -> prettyBuilder.append("A " + k + " has an area of " + v + ".\n"));
+        return prettyBuilder.toString();
+    }
 
 }

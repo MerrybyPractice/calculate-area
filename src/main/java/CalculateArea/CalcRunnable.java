@@ -14,7 +14,7 @@ public class CalcRunnable implements Runnable {
     public void run() {
         try {
             this.shape.findAreaOf();
-            System.out.println("Started " + threadName);
+
         } catch (Exception e){
 
         }

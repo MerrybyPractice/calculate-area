@@ -47,4 +47,19 @@ public class TriangleTest {
         assertEquals("0.0", test.findAreaOf(), "A Triangle with sides of 0 will have an area of 0.");
     }
 
+    @Test
+    void formattedRoundArea() {
+    }
+
+    @Test
+    void heuronsFormula() {
+    }
+
+    @Test
+    void getSide() {
+    }
+
+    @Test
+    void getArea() {
+    }
 }

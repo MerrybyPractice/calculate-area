@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class SquareTest {
 
     @Test
-    public void typeOfSquareisSquare(){
+    public void typeOfSquareIsSquare(){
         Square test = new Square(1);
 
         assertTrue(test instanceof Square);
@@ -37,7 +37,6 @@ public class SquareTest {
     @Test
     public void areaOfSquareWithSidesTwoPointThree(){
         Square test = new Square(2.3f);
-        System.out.println("In areaOfSquareWithSidesTwoPointThree "+ test.findAreaOf());
         assertEquals("5.29", test.findAreaOf());
     }
 

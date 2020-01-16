@@ -33,11 +33,11 @@ Creates a custom Runnable that is used to instantiate the threads in CalcManager
 
 Interface that provides standard methods implemented by all Shapes. 
 
-These include: 
-   String findAreaOf()
-   Float formattedRoundArea(Double area)
-   Float getArea()
-   String getType
+    These include: 
+        String findAreaOf()
+        Float formattedRoundArea(Double area)
+        Float getArea()
+        String getType
 
 ### Circle 
 

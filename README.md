@@ -1,5 +1,7 @@
 # calculate-area
 
+v. 1.0.0
+
 A Multi-threaded application that takes in a double and returns a HashMap of Key-Value-Pairs representing the area of a 
 Circle, Square, and Equilateral Triangle. 
 
